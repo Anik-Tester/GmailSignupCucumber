@@ -36,6 +36,8 @@ public class GmailSigninStep extends DriverFactory {
     @Then("^user should be logged in successfully and navigated to mailbox$")
     public void userShouldBeLoggedInSuccessfullyAndNavigatedToMailbox() throws Throwable {
 
+        new DriverFactory().destroyDriver(driver);
+
     }
 
 

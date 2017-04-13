@@ -16,8 +16,10 @@ public class DriverFactory  {
     }
 
 
-    public void destroyDriver() {
+    public void destroyDriver(WebDriver driver) {
+        driver.close();
         driver.quit();
+
         driver = null;
     }
 }
